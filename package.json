@@ -1,6 +1,6 @@
 {
   "name": "try_handle",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Maybe-monado implementation as most simple",
   "main": "index.js",
   "types": "index.d.ts",
