@@ -1,5 +1,3 @@
-// import * as Chai from ""
-// import {} from 
 /// <reference path="types/index.d.ts" />
 // @ts-ignore
 import * as ChaiJs from "https://dev.jspm.io/chai";
