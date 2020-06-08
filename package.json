@@ -1,0 +1,32 @@
+{
+  "name": "try_handle",
+  "version": "0.1.0",
+  "description": "Maybe-monado implementation as most simple",
+  "main": "index.js",
+  "scripts": {
+    "build_front": "cp -r src/front/assets public && tsc -p tsconfig.front.json && cp dist/front/target*.js public/script/  ",
+    "build_back": "tsc",
+    "build": "npm run build_front && npm run build_back",
+    "clean": "rm -r dist && rm -r public",
+    "start": "node dist/back/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AtsushiYamashita/try_handle.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AtsushiYamashita/try_handle/issues"
+  },
+  "devDependencies": {
+    "@types/express": "4.17.6",
+    "@types/node": "14.0.11",
+    "dotenv": "^8.2.0",
+    "express": "4.17.1",
+    "shorter-dts": "^1.0.1"
+  },
+  "homepage": "https://github.com/AtsushiYamashita/try_handle#readme"
+}
