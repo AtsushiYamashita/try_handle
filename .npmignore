@@ -2,6 +2,7 @@
 .editorconfig
 .temp
 
+public
 src
 memo
 script

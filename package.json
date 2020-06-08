@@ -3,12 +3,14 @@
   "version": "0.1.0",
   "description": "Maybe-monado implementation as most simple",
   "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
     "build_front": "cp -r src/front/assets public && tsc -p tsconfig.front.json && cp dist/front/target*.js public/script/  ",
     "build_back": "tsc",
     "build": "npm run build_front && npm run build_back",
     "clean": "rm -r dist && rm -r public",
     "start": "node dist/back/server.js",
+    "prepublish": "cp dist/front/target.js index.js && cp dist/front/target.d.ts index.d.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,7 +19,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/AtsushiYamashita/try_handle/issues"
   },
